@@ -3,3 +3,4 @@ rootfs.tar.gz
 *.out
 /app/src/*.out
 /app/src/*.o
+/app/*

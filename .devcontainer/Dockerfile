@@ -1,4 +1,4 @@
-FROM utnso-rootfs:latest
+FROM matiaspormi/utnso-docker-image:latest
 
 # Ejecutar el script base.sh si existe
 # Instalar so-commons-library
@@ -14,6 +14,3 @@ RUN mkdir -p /home/utnso/workspace && chown utnso:utnso /home/utnso/workspace
 WORKDIR /home/utnso/workspace
 USER utnso
 
-# Aquí luego instalarás so-commons según tus instrucciones
-# COPY so-commons /tmp/so-commons
-# RUN cd /tmp/so-commons && make install
