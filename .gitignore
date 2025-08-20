@@ -1,0 +1,5 @@
+rootfs.tar.gz
+*.o
+*.out
+/app/src/*.out
+/app/src/*.o

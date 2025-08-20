@@ -1,0 +1,21 @@
+services:
+  utnso-dev:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    container_name: utnso-docker
+    networks:
+      utnso-net:
+        ipv4_address: 192.168.0.100
+    volumes:
+      - ./app:/home/utnso/workspace
+    tty: true
+    stdin_open: true
+
+networks:
+  utnso-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "192.168.0.0/24"
+          gateway: "192.168.0.1"

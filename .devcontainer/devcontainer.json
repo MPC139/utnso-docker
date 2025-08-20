@@ -1,0 +1,24 @@
+{
+  "name": "UTNSO Development Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "utnso-dev",
+  "workspaceFolder": "/home/utnso",
+  "remoteUser": "utnso",
+  "shutdownAction": "stopCompose",
+  
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "C_Cpp.default.compilerPath": "/bin/gcc"
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "formulahendry.code-runner"
+      ]
+    }
+  },
+  
+  "postCreateCommand": "echo 'Contenedor UTNSO listo!'"
+}
