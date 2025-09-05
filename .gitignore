@@ -4,3 +4,4 @@ rootfs.tar.gz
 /app/src/*.out
 /app/src/*.o
 /app/*
+.DS_Store
